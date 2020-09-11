@@ -174,3 +174,39 @@ header {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
+ li a,
+.dropbtn {
+  display: inline-block;
+  padding: 7px 10px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #232020;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ff7315;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #3a3535;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 

@@ -73,3 +73,30 @@ function pmsSlides(n) {
     slides[slidePMS - 1].style.display = "block";
     dots[slidePMS - 1].className += " active-pms";
 }
+
+
+
+//=======SLIDE CHAT======= 
+var slideChat = 1;
+chatSlides(slideChat);
+
+// Thumbnail image controls
+function currentChat(n) {
+    chatSlides(slideChat = n);
+}
+
+function chatSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("chat-image");
+    var dots = document.getElementsByClassName("dot-chat");
+    if (n > slides.length) { slideChat = 1 }
+    if (n < 1) { slideChat = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active-chat", "");
+    }
+    slides[slideChat - 1].style.display = "block";
+    dots[slideChat - 1].className += " active-chat";
+}

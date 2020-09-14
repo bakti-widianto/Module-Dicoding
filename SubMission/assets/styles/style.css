@@ -256,14 +256,14 @@ li.dropdown {
 }
 
 /* SLIDE PMS */
-.cms-image {
+.pms-image {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
   object-position: center;
 }
 
-.dot-cms {
+.dot-pms {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -274,7 +274,7 @@ li.dropdown {
   transition: background-color 0.6s ease;
 }
 
-.active-cms,
-.dot-cms:hover {
+.active-pms,
+.dot-pms:hover {
   background-color: #717171;
 }

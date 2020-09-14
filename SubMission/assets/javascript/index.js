@@ -23,31 +23,26 @@ function move() {
     }
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+var slideCMS = 1;
+cmsSlides(slideCMS);
 
 // Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function currentCms(n) {
+    cmsSlides(slideCMS = n);
 }
 
-function showSlides(n) {
+function cmsSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("featured-image");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
+    var slides = document.getElementsByClassName("cms-image");
+    var dots = document.getElementsByClassName("dot-cms");
+    if (n > slides.length) { slideCMS = 1 }
+    if (n < 1) { slideCMS = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active-cms", "");
     }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    slides[slideCMS - 1].style.display = "block";
+    dots[slideCMS - 1].className += " active-cms";
 }

@@ -302,3 +302,12 @@ li.dropdown {
 .dot-chat:hover {
   background-color: #717171;
 }
+
+.link {
+  color: black;
+}
+
+.link:hover {
+  font-weight: bold;
+  color: #ff7315;
+}
